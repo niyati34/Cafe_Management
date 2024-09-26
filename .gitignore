@@ -1,0 +1,36 @@
+# PHP
+*.log
+*.cache
+*.tmp
+*.temp
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+.env.production
+
+# Dependencies
+vendor/
+node_modules/
+
+# Uploads
+uploads/
+temp/
+
+# Database
+*.sqlite
+*.db
+
+# Backup files
+*.bak
+*.backup
