@@ -1,116 +1,46 @@
-# Food Chef Cafe Management System
+# Food-Chef-Cafe-Management
+Food Chef is a cafe and restaurant management website with both user and admin panel.
 
-A comprehensive PHP-based web application for managing cafe and restaurant operations with both user-facing frontend and admin panel.
+# Installation
 
-## 🍽️ Features
+1. Install XAMPP or WAMPP.
 
-### User Features
-- **Responsive Design**: Modern, mobile-friendly interface
-- **Menu Display**: Beautiful food gallery with descriptions
-- **About Section**: Restaurant information and story
-- **Services**: Available services and offerings
-- **Team**: Staff profiles and information
-- **Contact**: Contact form and location details
-- **Photo Gallery**: Restaurant ambiance and food photos
+2. Open XAMPP Control panal and start [apache] and [mysql] .
 
-### Admin Features
-- **Dashboard**: Complete admin control panel
-- **Content Management**: Add, edit, delete content
-- **Food Management**: Manage menu items and categories
-- **Banner Management**: Update homepage banners
-- **Team Management**: Manage staff profiles
-- **Services Management**: Update service offerings
-- **Photo Gallery**: Upload and manage images
-- **Contact Management**: Handle contact information
+3. Download project from github(https://github.com/Sankhala-Rohit/Food-Chef-Cafe-Management.git)  
+    OR follow gitbash commands
+    
+    i>cd C:\\xampp\htdocs\
+    
+    ii>git clone https://github.com/Sankhala-Rohit/Food-Chef-Cafe-Management.git
+    
+4. extract files in C:\\xampp\htdocs\.
 
-## 🛠️ Technology Stack
+5. open link localhost/phpmyadmin
 
-- **Backend**: PHP 7.4+
-- **Database**: MySQL
-- **Frontend**: HTML5, CSS3, JavaScript
-- **Framework**: Custom MVC Architecture
-- **Styling**: Bootstrap, Font Awesome
-- **Server**: Apache/Nginx
+6. click on new at side navbar.
 
-## 📋 Requirements
+7. give a database name as (project) hit on create button.
 
-- PHP 7.4 or higher
-- MySQL 5.7 or higher
-- Apache/Nginx web server
-- XAMPP/WAMP/MAMP (for local development)
+8. after creating database name click on import.
 
-## 🚀 Installation
+9. browse the file in directory[Food-Chef-Cafe-Management/database/project.sql].
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/food-chef-cafe-management.git
-   cd food-chef-cafe-management
-   ```
+10. after importing successfully.
 
-2. **Setup Database**
-   - Open phpMyAdmin
-   - Create a new database named `project`
-   - Import `Food-Chef-Cafe-Management-master/database/project.sql`
+11. open any browser and type http://localhost/project.
 
-3. **Configure Database**
-   - Edit `Food-Chef-Cafe-Management-master/config/config.php`
-   - Update database credentials if needed
+12. For admin type http://localhost/project/admin.
 
-4. **Access the Application**
-   - User Frontend: `http://localhost/project`
-   - Admin Panel: `http://localhost/project/admin`
-   - Admin Login: username: `admin`, password: `admin123`
+13. admin login details username = admin and Password = admin123.
 
-## 📁 Project Structure
 
-```
-Food-Chef-Cafe-Management-master/
-├── admin/                 # Admin panel
-│   ├── modules/          # Admin modules
-│   ├── public/           # Admin assets
-│   └── config/           # Admin configuration
-├── config/               # Main configuration
-├── database/             # Database files
-├── libs/                 # Core libraries
-├── modules/              # Frontend modules
-├── public/               # Public assets
-│   ├── css/             # Stylesheets
-│   ├── js/              # JavaScript files
-│   ├── images/          # Images
-│   └── fonts/           # Font files
-└── index.php            # Main entry point
-```
+##  If you like my project hit a star button
+##  Thank You. Have A Good Day.
 
-## 🔧 Configuration
-
-### Database Configuration
-Edit `config/config.php`:
-```php
-define('BASEURL','http://localhost/project/');
-define('HOSTNAME','localhost');
-define('USERNAME','root');
-define('PASSWORD','');
-define('DB','project');
-```
-
-## 👥 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-## 📝 License
-
-This project is licensed under the MIT License.
-
-## 🤝 Support
-
-For support and questions, please open an issue on GitHub.
-
-## 🙏 Acknowledgments
-
-- Bootstrap for responsive design
-- Font Awesome for icons
-- jQuery for JavaScript functionality
+<a href="https://twitter.com/RohitSankhla13">
+  <img align="left" alt=" Rohit Sankhla | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />
+</a>
+<a href="https://www.instagram.com/sankhala_rohit">
+  <img align="left" alt="Rohit Sankhala's Instagram" width="22px" height="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />
+</a>
