@@ -1,0 +1,45 @@
+{
+  "app_name": "Food Chef Cafe",
+  "version": "1.0.0",
+  "api_base_url": "https://foodchef.com/api",
+  "features": {
+    "menu": true,
+    "reservations": true,
+    "contact": true,
+    "about": true,
+    "team": true,
+    "push_notifications": true,
+    "offline_mode": true
+  },
+  "ui_config": {
+    "primary_color": "#FF6B35",
+    "secondary_color": "#F7931E",
+    "accent_color": "#2C3E50",
+    "font_family": "Roboto",
+    "theme": "light"
+  },
+  "api_endpoints": {
+    "menu": "/menu",
+    "reservations": "/reservations",
+    "contact": "/contact",
+    "about": "/about",
+    "team": "/team"
+  },
+  "cache_settings": {
+    "menu_cache_duration": 3600,
+    "images_cache_duration": 86400,
+    "max_cache_size": "50MB"
+  },
+  "notification_settings": {
+    "reservation_reminders": true,
+    "new_menu_items": true,
+    "special_offers": true,
+    "push_enabled": true
+  },
+  "security": {
+    "api_key_required": true,
+    "rate_limiting": true,
+    "ssl_required": true,
+    "session_timeout": 3600
+  }
+}
