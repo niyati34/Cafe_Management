@@ -1,46 +1,70 @@
-# Food-Chef-Cafe-Management
-Food Chef is a cafe and restaurant management website with both user and admin panel.
+# Food Chef Cafe Management
 
-# Installation
+A modern, responsive cafe/restaurant website with a public site and an admin panel — curated and maintained by Niyati Raiyani.
 
-1. Install XAMPP or WAMPP.
+Live Demo: https://food-restaurant.infinityfreeapp.com/
 
-2. Open XAMPP Control panal and start [apache] and [mysql] .
+## Features
 
-3. Download project from github(https://github.com/Sankhala-Rohit/Food-Chef-Cafe-Management.git)  
-    OR follow gitbash commands
-    
-    i>cd C:\\xampp\htdocs\
-    
-    ii>git clone https://github.com/Sankhala-Rohit/Food-Chef-Cafe-Management.git
-    
-4. extract files in C:\\xampp\htdocs\.
+- Dynamic homepage with banners and sections (About, Services, Team, Food, Contact)
+- Admin panel for managing banners, services, team, food, photo gallery
+- Image lightbox gallery and sliders
+- Clean URL routing via `.htaccess`
+- Configurable environment with production overrides via `config/secrets.php`
 
-5. open link localhost/phpmyadmin
+## Screenshots
 
-6. click on new at side navbar.
+<p>
+<img width="1900" height="881" alt="image" src="https://github.com/user-attachments/assets/0ec57f13-2b74-4669-a1aa-e7f3add1dde4" />
+</p>
+<p><img width="1895" height="882" alt="image" src="https://github.com/user-attachments/assets/7ede00fe-a579-415b-95d7-b25bf33ec8c5" />
+</p>
+<p><img width="1892" height="871" alt="image" src="https://github.com/user-attachments/assets/ff64fc42-bafd-43bf-95e9-bcef9ef68273" />
+</p>
 
-7. give a database name as (project) hit on create button.
+ 
 
-8. after creating database name click on import.
+## Quick start (local, XAMPP)
 
-9. browse the file in directory[Food-Chef-Cafe-Management/database/project.sql].
+1. Start Apache and MySQL in XAMPP.
+2. Copy this repo into `C:\\xampp\\htdocs\\final` so `htdocs\\final\\index.php` exists.
+3. Create a MySQL database (e.g., `hotel`) in phpMyAdmin.
+4. Import `database/project.sql` (and optionally `database/migrations/*.sql`).
+5. Open `http://localhost/final/` (site) and `http://localhost/final/admin/` (admin).
+   - Admin login: username `admin`, password `admin123`.
 
-10. after importing successfully.
+## Configuration
 
-11. open any browser and type http://localhost/project.
+- `config/config.php` auto-detects `BASEURL` and sets sensible defaults.
+- Create `config/secrets.php` to override DB and environment for production:
 
-12. For admin type http://localhost/project/admin.
+  ```php
+  <?php
+  define('HOSTNAME','your-db-host');
+  define('USERNAME','your-db-user');
+  define('PASSWORD','your-db-pass');
+  define('DB','your-db-name');
+  define('ENVIRONMENT','production');
+  define('DEBUG_MODE',false);
+  ?>
+  ```
 
-13. admin login details username = admin and Password = admin123.
+## Deploy to InfinityFree (summary)
 
+1. Upload the contents of `final` into `htdocs/`.
+2. Create a MySQL database in the Control Panel and import `database/project.sql` via phpMyAdmin.
+3. Add `config/secrets.php` with your DB credentials (see above).
+4. Browse your site at your InfinityFree domain.
 
-##  If you like my project hit a star button
-##  Thank You. Have A Good Day.
+## Project structure
 
-<a href="https://twitter.com/RohitSankhla13">
-  <img align="left" alt=" Rohit Sankhla | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />
-</a>
-<a href="https://www.instagram.com/sankhala_rohit">
-  <img align="left" alt="Rohit Sankhala's Instagram" width="22px" height="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />
-</a>
+- `modules/` — frontend modules (banner, about, services, team, food, contact)
+- `admin/` — admin panel (modules, public assets)
+- `public/` — site assets (css, js, images)
+- `libs/` — core libraries (Db wrapper, managers)
+- `database/` — SQL dump and migrations
+- `config/` — base config and secrets override
+
+## License and credits
+
+© 2025 Food Chef. All rights reserved | Developed by Niyati Raiyani
